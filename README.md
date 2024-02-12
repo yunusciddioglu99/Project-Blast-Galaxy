@@ -8,8 +8,10 @@ Blast-Galaxy soon opening!! Wij promote de leukste aracade in Amsterdam!
 
 - Sercure website
 - Easy Promo
-- 
 
+## Team 
+- 2e Jaars
+- 1e Jaars
 
 
 
