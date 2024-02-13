@@ -25,6 +25,32 @@ margin-top: 100px;
 font-size: 30px;
 }
 
+.Plop
+{
+  display: flex;
+  align-content: space-around;
+  width: 100%;
+  padding: 0;
+  gap: 10px;
+}
+
+
+
+img
+{
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.2s transform;
+    height: 90vh;    
+    object-fit: cover;
+}
+
+img:hover
+{
+    transform: scale(1.05);
+}
+
+
 body
 {
     font-size: 20px;
