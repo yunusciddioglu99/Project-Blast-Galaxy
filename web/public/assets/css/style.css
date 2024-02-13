@@ -54,4 +54,34 @@ ul {
 footer{
   height: 150px;
   background-color: #013147;
+  font-size: x-large;
+  color: #f60065;
+}
+
+
+.infofooter {
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+
+}
+
+.adresstijden {
+  width: 50px;
+  flex-shrink: 1;
+  flex-grow: 1;
+
+}
+
+.adress {
+  max-width: 10ch;
+}
+
+.contact {
+  max-width: 17ch;
+}
+
+.intro{
+  display: flex;
 }
