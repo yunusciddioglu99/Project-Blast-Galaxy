@@ -22,9 +22,8 @@ body {
 {
 display: flex;
 justify-content: left;
-align-items: flex-end;
+padding: 0 15px;
 margin-bottom: 40px;
-margin-top: auto;
 font-size: 30px;
 width: 80%;
 }
@@ -39,6 +38,18 @@ width: 80%;
 }
 
 #tijden
+{
+  margin-bottom: 30px;
+}
+
+#Zuider
+{
+  font-size: x-large;
+  border-radius: 70%;
+  margin-bottom: 20px;
+}
+
+
 
 img
 {
