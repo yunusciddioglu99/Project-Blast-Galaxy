@@ -1,13 +1,11 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
-article
-{
+article {
   text-align: left;
   width: 35%;
 
@@ -15,25 +13,22 @@ article
 
 
 
-#Info
-{
-display: flex;
-justify-content: left;
-align-items: flex-end;
-margin-bottom: 40px;
-margin-top: 100px;
-font-size: 30px;
+#Info {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  font-size: 30px;
 }
 
-body
-{
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+body {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
-h4
-{
+h4 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -41,40 +36,39 @@ h4
 }
 
 
-.Arcade
-{
+.Arcade {
   width: 150%;
   object-position: right;
 }
 
 
-
-
-
-
-
-
-header{
+header {
   height: 150px;
   background-color: #013147;
 }
- .logo{
+
+.logo {
   width: 15%;
   height: 100%;
   display: flex;
   justify-content: left;
   align-items: flex-end;
- }
+}
 
- a {
+
+a {
   text-decoration: none;
   padding: 10px 20px;
   display: block;
   font-weight: 600;
   transition: 0.5s;
-  font-size:xx-large;
+  font-size: xx-large;
   color: #f60065;
 
+}
+
+a:hover{
+  color: #ffc070;
 }
 
 ul {
@@ -89,7 +83,7 @@ ul {
   align-items: center;
 }
 
-footer{
+footer {
   height: 150px;
   background-color: #013147;
   font-size: x-large;
@@ -121,7 +115,9 @@ footer{
   max-width: 17ch;
 }
 
-.intro{
+.intro {
   display: flex;
 }
+
+
 
