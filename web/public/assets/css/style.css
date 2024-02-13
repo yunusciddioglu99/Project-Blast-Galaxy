@@ -1,27 +1,29 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
-article
-{
+article {
   text-align: left;
   /* width: 90%; */
 
 }
 
 
+body {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
 
 #Info
 {
 display: flex;
 justify-content: left;
-align-items: flex-end;
+padding: 0 15px;
 margin-bottom: 40px;
-margin-top: auto;
 font-size: 30px;
 width: 80%;
 }
@@ -36,6 +38,18 @@ width: 80%;
 }
 
 #tijden
+{
+  margin-bottom: 30px;
+}
+
+#Zuider
+{
+  font-size: x-large;
+  border-radius: 70%;
+  margin-bottom: 20px;
+}
+
+
 
 img
 {
@@ -56,10 +70,10 @@ body
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+
 }
 
-h4
-{
+h4 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -71,6 +85,7 @@ h4
 .Arcade
 {
   width: 40%;
+
   object-position: right;
 }
 
@@ -80,26 +95,33 @@ h4
 
 
 header{
+
   height: 150px;
   background-color: #013147;
 }
- .logo{
+
+.logo {
   width: 15%;
   height: 100%;
   display: flex;
   justify-content: left;
   align-items: flex-end;
- }
+}
 
- a {
+
+a {
   text-decoration: none;
   padding: 10px 20px;
   display: block;
   font-weight: 600;
   transition: 0.5s;
-  font-size:xx-large;
+  font-size: xx-large;
   color: #f60065;
 
+}
+
+a:hover{
+  color: #ffc070;
 }
 
 ul {
@@ -114,8 +136,8 @@ ul {
   align-items: center;
 }
 
-footer{
-  height: 150px;
+footer {
+  height: 179px;
   background-color: #013147;
   font-size: x-large;
   color: #f60065;
@@ -146,7 +168,95 @@ footer{
   max-width: 17ch;
 }
 
-.intro{
+.intro {
   display: flex;
 }
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 
