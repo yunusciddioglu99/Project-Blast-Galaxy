@@ -1,5 +1,11 @@
 <!DOCTYPE html>
+
+
+<html lang="en">
 <html lang="nl">
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,87 +13,194 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/app.js"></script>
 </head>
+
 <body>
-    
-   <header>
 
-    <nav>
-        <div class="container">
-            <div>
-                <img class="logo" src="img/blast-galaxy-logo.jpg" alt="blast-galaxy-logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="">tickets</a>
-                    </li>
-                    <li>
-                        <a href="">games</a>
-                    </li>
-                    <li>
-                        <a href="">contact</a>
-                    </li>
-                </ul>
+
+
+    <header>
+
+        <nav>
+            <div class="container">
+                <div>
+                    <img class="logo" src="img/blast-galaxy-logo.jpg" alt="blast-galaxy-logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="https://store.blastgalaxy.nl/product/entry-ticket-day/">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="https://blastgalaxy.nl/our-games/">Games</a>
+                        </li>
+                        <li>
+                            <a href="https://blastgalaxy.nl/contact/">Contact</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Taal</a>
+                        </li>
+                    </ul>
+                </div>
+
+    </header>
+
+
+
+
+    <article>
+
+
+        <section class="Plop">
+
+            <p id="Info">
+                Blast Galaxy is de ultieme bestemming voor groepen en bedrijven die op zoek zijn naar een dag vol klassiekers
+                arcade-plezier.
+                We hebben de traditionele ervaring in een moderne arcadeclub opnieuw gedefinieerd,
+                terwijl de ziel en geest van de klassieke arcade worden beschermd –
+                een geweldige sfeer en een kwalitatief en creatief menu gecombineerd met een unieke selectie van meer dan 100
+                geweldige arcadespellen.
+            </p>
+
+
+            <img class="Arcade" src="img/arcade.jpg" alt="Foto van de arcade">
+
+
+        </section>
+
+
+
+        <h4>
+            Eén toegangsprijs, al onze arcade- en consolespellen zijn gratis!
+        </h4>
+
+
+
+        <p id="tijden">
+            Wij zijn op de volgende tijden geopend: <br>
+            Woensdag: 12.00-18.00 <br>
+            Donderdag: 16.00-23.00 <br>
+            Vrijdag: 16.00-00.30 <br>
+            Zaterdag: 12.00-00.30  <br>
+        </p>
+
+
+        <p id="Zuider">
+            Wij zijn meerdere dagen per week gesloten voor het grote publiek,
+            waardoor je de plek helemaal voor jezelf hebt.
+            De perfecte setting voor een groep om te genieten van ons eten & drinken,
+            en al onze arcadespellen,
+            hetzij in je eigen tempo, hetzij begeleid door ons team met een leuk toernooi.
+            Blast Galaxy dient ook als unieke achtergrond voor elk evenement –
+            zoals pers- en lanceringsevenementen, video-opnamen of e-sportcompetities –
+            en biedt een privéruimte voor presentaties en vergaderingen.
+        </p>
+
+
+        <p id="Zuider">
+            We zijn in staat om de ervaring volledig op maat te maken en op maat gemaakte pakketten te creëren,
+            voor elke behoefte en budget.
+            Neem contact met ons op voor meer informatie!
+        </p>
+
+
+
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/arcadekasten.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
             </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/drumgame.jfif" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/gamehal.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-   
-    </nav>
+        <br>
 
-   </header>   
-    
-<article>
-
-<p id="Info">
-    Blast Galaxy is de ultieme bestemming voor groepen en bedrijven die op zoek zijn naar een dag vol klassiek arcadeplezier.
-    We hebben de traditionele ervaring in een moderne arcadeclub opnieuw gedefinieerd,
-    terwijl de ziel en geest van de klassieke arcade worden beschermd –
-    een geweldige sfeer en een kwalitatief hoogstaand en creatief menu gecombineerd met een unieke selectie van meer dan 100 geweldige arcadespellen.
-</p>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
 
-<img class="Arcade" src="img/arcade.jpg" alt="">
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
 
 
-<h4>
-    Geen toegangsprijs, al onze arcade- en consolespellen zijn gratis!
-</h4>
+    </article>
 
 
-<p> 
-    Wij zijn de volgende uren geopend: <br> 
-    Woensdag: 12.00-18.00 <br>
-    Donderdag: 16.00-23.00 <br>
-    Vrijdag: 16.00-00.30 <br>
-    Zaterdag: 12.00-00.30 <br>
-</p>
-  
-</article>
-
-<footer class="infofooter">
-    <section class="adresstijden">
-        <h4>
-            Adress
-        </h4>
-
-        <p class="adress">
-            magneetstraat 5
-            1014 CC
-            Amsterdam
-        </p>
-    </section>
-
-    <section class="contact">
-        <h4>
-            contact
-        </h4>
 
 
-        <p class="contactnummer">
-            +31618743090
-        </p>
-    </section>
-</footer>
+
+    <footer class="infofooter">
+        <section class="adresstijden">
+            <h4>
+                Adress
+            </h4>
+
+            <p class="adress">
+                Magneetstraat 5
+                1014 CC
+                Amsterdam
+            </p>
+        </section>
+
+        <section class="contact">
+            <h4>
+                Contact:
+            </h4>
+
+
+            <p class="contactnummer">
+                +31618743090
+            </p>
+        </section>
+    </footer>
+
 
 </body>
+
 </html>
