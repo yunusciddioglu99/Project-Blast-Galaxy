@@ -15,3 +15,43 @@ html {
 body {
     
 }
+
+header{
+  height: 150px;
+  background-color: #013147;
+}
+ .logo{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+ }
+
+ a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size:xx-large;
+  color: #f60065;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer{
+  height: 150px;
+  background-color: #013147;
+}
