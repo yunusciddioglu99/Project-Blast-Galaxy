@@ -9,7 +9,7 @@
 article
 {
   text-align: left;
-  width: 35%;
+  /* width: 90%; */
 
 }
 
@@ -21,27 +21,27 @@ display: flex;
 justify-content: left;
 align-items: flex-end;
 margin-bottom: 40px;
-margin-top: 100px;
+margin-top: auto;
 font-size: 30px;
+width: 80%;
 }
 
 .Plop
 {
   display: flex;
   align-content: space-around;
-  width: 100%;
   padding: 0;
   gap: 10px;
+  margin-top: 40px;
 }
 
-
+#tijden
 
 img
 {
-    width: 100%;
     border-radius: 5px;
     transition: 0.2s transform;
-    height: 90vh;    
+    height: auto;    
     object-fit: cover;
 }
 
@@ -64,12 +64,13 @@ h4
   justify-content: space-between;
   align-items: flex-end;
   width: 25%;
+  margin-bottom: 30px;
 }
 
 
 .Arcade
 {
-  width: 150%;
+  width: 40%;
   object-position: right;
 }
 
